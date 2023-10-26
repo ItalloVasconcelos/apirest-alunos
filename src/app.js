@@ -15,7 +15,7 @@ import aluno from './routes/aluno';
 import photo from './routes/photo';
 
 const whiteList = [
-  'http://335.199.119.222',
+  'http://35.199.119.222',
   'http://localhost:3000',
 ];
 
