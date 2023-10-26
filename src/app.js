@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import dotenv from 'dotenv';
 import { resolve } from 'path';
 
