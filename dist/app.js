@@ -15,20 +15,20 @@ var _token = require('./routes/token'); var _token2 = _interopRequireDefault(_to
 var _aluno = require('./routes/aluno'); var _aluno2 = _interopRequireDefault(_aluno);
 var _photo = require('./routes/photo'); var _photo2 = _interopRequireDefault(_photo);
 
-const whiteList = [
-  'http://35.199.119.222',
-  'http://localhost:3000',
-];
+// const whiteList = [
+//   'http://35.199.119.222',
+//   'http://localhost:3000',
+// ];
 
-const corsOptions = {
-  origin(origin, callback) {
-    if (whiteList.indexOf(origin) !== -1 || !origin) {
-      callback(null, true);
-    } else {
-      callback(new Error('Not allowed by CORS'));
-    }
-  },
-};
+// const corsOptions = {
+//   origin(origin, callback) {
+//     if (whiteList.indexOf(origin) !== -1 || !origin) {
+//       callback(null, true);
+//     } else {
+//       callback(new Error('Not allowed by CORS'));
+//     }
+//   },
+// };
 
 class App {
   constructor() {
@@ -38,7 +38,7 @@ class App {
   }
 
   middlewares() {
-    this.app.use(_cors2.default.call(void 0, corsOptions));
+    this.app.use(_cors2.default.call(void 0, ));
     this.app.use(_helmet2.default.call(void 0, ));
     this.app.use(_express2.default.urlencoded({ extended: true }));
     this.app.use(_express2.default.json());
