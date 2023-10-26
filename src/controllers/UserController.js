@@ -8,7 +8,7 @@ class UserController {
       return res.json({ id, nome, email });
     } catch (error) {
       return res.status(400).json(
-        { errors: `Erro no controller do usuário: ${error.errors.map((err) => err.message)}` },
+        { errors: [`Erro no controller do usuário: ${error.errors.map((err) => err.message)}`] },
       );
     }
   }
@@ -32,7 +32,7 @@ class UserController {
       return res.json({ id, nome, email });
     } catch (error) {
       return res.status(400).json(
-        { errors: `Erro no controller do usuário: ${error.errors.map((err) => err.message)}` },
+        { errors: [`Erro no controller do usuário: ${error.errors.map((err) => err.message)}`] },
       );
     }
   }
@@ -52,7 +52,7 @@ class UserController {
       return res.json({ id, nome, email });
     } catch (error) {
       return res.status(400).json(
-        { errors: `Erro no controller do usuário: ${error.errors.map((err) => err.message)}` },
+        { errors: [`Erro no controller do usuário: ${error.errors.map((err) => err.message)}`] },
       );
     }
   }
@@ -74,7 +74,7 @@ class UserController {
       );
     } catch (error) {
       return res.status(400).json(
-        { errors: `Erro no controller do usuário: ${error.errors.map((err) => err.message)}` },
+        { errors: [`Erro no controller do usuário: ${error.errors.map((err) => err.message)}`] },
       );
     }
   }
