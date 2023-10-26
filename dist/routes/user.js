@@ -7,7 +7,7 @@ const router = new (0, _express.Router)();
 router.get('/', _UserController2.default.index); // Lista os usuarios
 router.get('/:id', _UserController2.default.show); // Lista um usuario
 
-router.post('/', _loginRequired2.default, _UserController2.default.store);
+router.post('/', _UserController2.default.store);
 router.put('/', _loginRequired2.default, _UserController2.default.update); // Remover o ID, pois o usuario não pode ter acesso a mudanças de outros users
 router.delete('/', _loginRequired2.default, _UserController2.default.delete);// Remover o ID, pois o usuario não pode ter acesso ao delete de outros users
 exports. default = router;
