@@ -17,6 +17,7 @@ import photo from './routes/photo';
 const whiteList = [
   'http://35.199.119.222',
   'http://localhost:3000',
+  'https://alunosapp.vercel.app',
 ];
 
 const corsOptions = {

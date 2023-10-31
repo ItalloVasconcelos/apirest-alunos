@@ -17,6 +17,7 @@ var _photo = require('./routes/photo'); var _photo2 = _interopRequireDefault(_ph
 const whiteList = [
   'http://35.199.119.222',
   'http://localhost:3000',
+  'https://alunosapp.vercel.app',
 ];
 
 const corsOptions = {
