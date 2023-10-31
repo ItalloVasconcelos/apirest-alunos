@@ -1,10 +1,12 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import dotenv from 'dotenv';
 import { resolve } from 'path';
 
 dotenv.config();
 
 import cors from 'cors';
-import helmet from 'helmet';
+
+
 
 import './database';
 import express from 'express';
@@ -15,8 +17,10 @@ import aluno from './routes/aluno';
 import photo from './routes/photo';
 
 const whiteList = [
-  'http://335.199.119.222',
+
+  'http://35.199.119.222',
   'http://localhost:3000',
+  'https://alunosapp.vercel.app',
 ];
 
 const corsOptions = {
@@ -38,7 +42,8 @@ class App {
 
   middlewares() {
     this.app.use(cors(corsOptions));
-    this.app.use(helmet());
+
+
     this.app.use(express.urlencoded({ extended: true }));
     this.app.use(express.json());
     this.app.use('/images/', express.static(resolve(__dirname, '..', 'uploads', 'images')));

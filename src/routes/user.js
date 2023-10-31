@@ -7,7 +7,7 @@ const router = new Router();
 router.get('/', UserController.index); // Lista os usuarios
 router.get('/:id', UserController.show); // Lista um usuario
 
-router.post('/', loginRequired, UserController.store);
+router.post('/', UserController.store);
 router.put('/', loginRequired, UserController.update); // Remover o ID, pois o usuario não pode ter acesso a mudanças de outros users
 router.delete('/', loginRequired, UserController.delete);// Remover o ID, pois o usuario não pode ter acesso ao delete de outros users
 export default router;
