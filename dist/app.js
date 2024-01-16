@@ -15,6 +15,7 @@ var _aluno = require('./routes/aluno'); var _aluno2 = _interopRequireDefault(_al
 var _photo = require('./routes/photo'); var _photo2 = _interopRequireDefault(_photo);
 
 const whiteList = [
+
   'http://35.199.119.222',
   'http://localhost:3000',
   'https://alunosapp.vercel.app',
